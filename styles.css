@@ -1,0 +1,387 @@
+/* Ditto Website Styles */
+/* Accent Color: #FF66FF */
+
+:root {
+    --accent: #FF66FF;
+    --accent-light: #FF99FF;
+    --accent-dark: #CC33CC;
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 24px;
+    background: 
+        radial-gradient(ellipse at 50% 0%, rgba(255, 102, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(255, 102, 255, 0.08) 0%, transparent 40%),
+        var(--bg-primary);
+}
+
+.app-icon {
+    width: 128px;
+    height: 128px;
+    border-radius: 28px;
+    margin-bottom: 32px;
+    box-shadow: 
+        0 20px 60px rgba(255, 102, 255, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.app-title {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.platforms {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.platform-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.platform-badge svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* App Store Button */
+.app-store-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.app-store-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 102, 255, 0.3);
+}
+
+.app-store-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.app-store-btn.coming-soon {
+    cursor: default;
+}
+
+.app-store-btn.coming-soon:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 24px;
+    background: var(--bg-secondary);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 102, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+    padding: 48px 24px;
+    text-align: center;
+    background: var(--bg-primary);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-links {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.copyright {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Subpage Styles */
+.subpage {
+    padding: 60px 24px;
+    min-height: 100vh;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
+.subpage h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subpage .last-updated {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 48px;
+}
+
+.subpage h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.subpage h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: var(--accent-light);
+}
+
+.subpage p {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+.subpage ul {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.subpage ul li {
+    color: var(--text-secondary);
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.subpage ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.subpage a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.subpage a:hover {
+    opacity: 0.8;
+}
+
+.highlight-box {
+    background: rgba(255, 102, 255, 0.1);
+    border: 1px solid rgba(255, 102, 255, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 32px 0;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+    color: var(--text-primary);
+}
+
+.highlight-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Support page specifics */
+.emoji-large {
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+
+.cta-section {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.cta-section h3 {
+    color: var(--text-primary);
+    margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .app-title {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .subpage h1 {
+        font-size: 2rem;
+    }
+    
+    .feature-card {
+        padding: 24px;
+    }
+    
+    .platforms {
+        gap: 8px;
+    }
+    
+    .platform-badge {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
