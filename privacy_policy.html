@@ -5,64 +5,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Ditto</title>
-    <meta name="description"
-        content="Privacy Policy for Ditto - Learn how we protect your privacy and handle your data.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Privacy Policy for Ditto app. We do not collect any user data.">
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="apple-touch-icon" href="app-icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a0a1a 0%, #2d1033 50%, #1a0a2e 100%);
+            color: #ffffff;
+            padding: 2rem;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ff99ff 0%, #ff66ff 50%, #cc33cc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .policy-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .policy-card h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #ff66ff;
+        }
+
+        .policy-card p {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 1rem;
+        }
+
+        .policy-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 102, 255, 0.15) 0%, rgba(204, 51, 204, 0.15) 100%);
+            border: 1px solid rgba(255, 102, 255, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .highlight-box .icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .highlight-box .content h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #ff99ff;
+        }
+
+        .highlight-box .content p {
+            color: rgba(255, 255, 255, 0.85);
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ff66ff;
+            font-weight: bold;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        .contact-section p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .contact-section a {
+            color: #ff66ff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-section a:hover {
+            color: #ff99ff;
+        }
+    </style>
 </head>
 
 <body>
-    <main class="subpage container">
+    <div class="container">
         <a href="index.html" class="back-link">← Back to Home</a>
 
         <h1>Privacy Policy</h1>
         <p class="last-updated">Last updated: January 7, 2026</p>
 
         <div class="highlight-box">
-            <h3>Your Privacy is Protected</h3>
-            <p>Ditto does not collect, store, or transmit any personal data. All processing happens entirely on your
-                device.</p>
+            <div class="icon">🔒</div>
+            <div class="content">
+                <h3>Your Privacy is Protected</h3>
+                <p>Ditto does not collect, store, or transmit any personal data. All processing happens
+                    entirely on your device.</p>
+            </div>
         </div>
 
-        <h2>Data Collection</h2>
-        <p>Ditto does not collect any data from its users. We have designed our app with privacy as a core principle.
-        </p>
-        <ul>
-            <li>No personal information is collected</li>
-            <li>No usage analytics or tracking</li>
-            <li>No data is sent to external servers</li>
-            <li>No third-party services have access to your data</li>
-        </ul>
+        <div class="policy-card">
+            <h2>Data Collection</h2>
+            <p>Ditto does <strong>not</strong> collect any data from its users. We have designed our app with
+                privacy as a core principle.</p>
+            <ul>
+                <li>No personal information is collected</li>
+                <li>No usage analytics or tracking</li>
+                <li>No data is sent to external servers</li>
+                <li>No third-party services have access to your data</li>
+            </ul>
+        </div>
 
-        <h2>On-Device Processing</h2>
-        <p>All data processing within Ditto occurs entirely on your device. Your photo metadata stays on your device and
-            is never transmitted elsewhere.</p>
-        <p>The app only reads and writes photo metadata using Apple's Photos framework with your explicit permission.
-            This data is processed locally and is never stored outside of the standard system frameworks.</p>
+        <div class="policy-card">
+            <h2>On-Device Processing</h2>
+            <p>All data processing within Ditto occurs entirely on your device. Your photo metadata stays on your device
+                and is never transmitted elsewhere.</p>
+            <p>The app only reads and writes photo metadata using Apple's Photos framework with your explicit
+                permission. This data is processed locally and is never stored outside of the standard system
+                frameworks.</p>
+        </div>
 
-        <h2>Apple Photos</h2>
-        <p>Ditto integrates with Apple Photos to access and modify photo metadata. This integration is governed by
-            Apple's strict privacy guidelines:</p>
-        <ul>
-            <li>You control which photos the app can access</li>
-            <li>Photos data is encrypted and protected by iOS/iPadOS/macOS</li>
-            <li>We only read and write metadata; we never export or share your photos</li>
-            <li>Access can be revoked at any time in Settings</li>
-        </ul>
+        <div class="policy-card">
+            <h2>Apple Photos</h2>
+            <p>Ditto integrates with Apple Photos to access and modify photo metadata. This integration is governed
+                by Apple's strict privacy guidelines:</p>
+            <ul>
+                <li>You control which photos the app can access</li>
+                <li>Photos data is encrypted and protected by iOS/iPadOS/macOS</li>
+                <li>We only read and write metadata; we never export your photos</li>
+                <li>Access can be revoked at any time in Settings</li>
+            </ul>
+        </div>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an
-            updated revision date. Our commitment to not collecting user data will remain unchanged.</p>
-        <p>If you have any questions about this Privacy Policy, <a href="support.html">please contact us</a>.</p>
-    </main>
+        <div class="policy-card">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an
+                updated revision date. Our commitment to not collecting user data will remain unchanged.</p>
+        </div>
 
-    <footer class="footer">
-        <nav class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="support.html">Contact / Support</a>
-        </nav>
-        <p class="copyright">© 2025 Ditto</p>
-    </footer>
+        <div class="policy-card contact-section">
+            <p>If you have any questions about this Privacy Policy, <a href="support.html">please contact us</a>.</p>
+        </div>
+    </div>
 </body>
 
 </html>
