@@ -9,6 +9,9 @@
         content="Ditto helps you copy and paste photo metadata between photos with a simple tap. All data is processed on-device for complete privacy.">
     <link rel="icon" type="image/png" href="app-icon.png">
     <link rel="apple-touch-icon" href="app-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -17,7 +20,8 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-weight: 400;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -69,7 +73,7 @@
 
         h1 {
             font-size: 3rem;
-            font-weight: 700;
+            font-weight: 600;
             margin-bottom: 1rem;
             background: linear-gradient(135deg, #ff99ff 0%, #ff66ff 50%, #cc33cc 100%);
             -webkit-background-clip: text;
@@ -130,17 +134,20 @@
             border-color: rgba(255, 255, 255, 0.4);
         }
 
-        .app-store-badge {
+        .app-store-link {
             display: inline-block;
             margin-bottom: 1.5rem;
             transition: transform 0.2s ease, opacity 0.2s ease;
-            padding: 0.75rem 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.95rem;
-            cursor: default;
+        }
+
+        .app-store-link:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .app-store-badge {
+            height: 54px;
+            width: auto;
         }
 
         footer {
@@ -164,9 +171,10 @@
             <span class="feature">🔒 Privacy First</span>
         </div>
 
-        <div class="app-store-badge">
-            Coming Soon on the App Store
-        </div>
+        <a href="https://apps.apple.com/app/id6780508698" class="app-store-link" target="_blank"
+            rel="noopener">
+            <img src="app-store-badge.svg" alt="Download on the App Store" class="app-store-badge">
+        </a>
 
         <div class="links">
             <a href="privacy_policy.html" class="privacy-link">Privacy Policy</a>
