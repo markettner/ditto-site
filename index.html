@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ditto - Copy and Paste Photo Metadata</title>
     <meta name="description"
-        content="Ditto helps you copy and paste photo metadata between photos with a simple tap. All data is processed on-device for complete privacy.">
+        content="Edited a photo or made one with AI? It lands in your library with no date or location. Ditto copies them from the original, so the new shot sits right where it belongs — on-device and private.">
     <link rel="icon" type="image/png" href="app-icon.png">
     <link rel="apple-touch-icon" href="app-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -155,6 +155,97 @@
             color: rgba(255, 255, 255, 0.4);
             font-size: 0.85rem;
         }
+
+        .feature-cards {
+            display: grid;
+            gap: 1rem;
+            text-align: left;
+            margin: 0.5rem 0 0;
+        }
+
+        .cross-label {
+            margin: 2.6rem 0 0.9rem;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.4rem 1.5rem;
+        }
+
+        .feature-card .emoji {
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+
+        .feature-card h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 0.7rem 0 0.35rem;
+            color: #ff99ff;
+        }
+
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+
+        .crosspromo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-align: left;
+            text-decoration: none;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 1rem 1.25rem;
+            margin: 0 auto 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .crosspromo:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 102, 255, 0.5);
+        }
+
+        .crosspromo img {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+
+        .crosspromo .cp-name {
+            display: block;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #ff99ff;
+        }
+
+        .crosspromo .cp-desc {
+            display: block;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.15rem;
+        }
+
+        .crosspromo .cp-arrow {
+            margin-left: auto;
+            padding-left: 0.5rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.25rem;
+        }
     </style>
 </head>
 
@@ -162,7 +253,9 @@
     <div class="container">
         <img src="app-icon.png" alt="Ditto App Icon" class="app-icon">
         <h1>Ditto</h1>
-        <p class="tagline">Copy and paste photo metadata between photos with a simple tap.</p>
+        <p class="tagline">Edit a photo or generate one with AI and it lands in your library
+            stripped of its date and location — nowhere near the original. Ditto copies them
+            back across, so the new shot sits right where it belongs.</p>
 
         <div class="features">
             <span class="feature">📱 iPhone</span>
@@ -174,6 +267,42 @@
         <a href="https://apps.apple.com/app/id6780508698" class="app-store-link" target="_blank"
             rel="noopener">
             <img src="app-store-badge.svg" alt="Download on the App Store" class="app-store-badge">
+        </a>
+
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="emoji">👆</div>
+                <h3>Copy with a tap — or a drag</h3>
+                <p>Copy the capture date, location and the rest from the original photo onto
+                    your edit in a couple of taps. Or simply drag the original onto the edited
+                    one to send it across.</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">🔁</div>
+                <h3>Built for batches</h3>
+                <p>Made a whole set of edits, or several AI variations from one shot? Lock in
+                    the original's metadata once and paste it onto each. Reverse the direction
+                    any time you need to copy the other way.</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">🗂️</div>
+                <h3>Everything back in its place</h3>
+                <p>Instead of scattering to random corners of your library, your edits settle
+                    right beside the photos they came from — sorted by the moment they were
+                    actually taken.</p>
+            </div>
+        </div>
+
+        <p class="cross-label">The dream team</p>
+        <a class="crosspromo" href="https://pictimer.kettner.berlin/" target="_blank" rel="noopener">
+            <img src="pictimer-icon.png" alt="Pictimer App Icon">
+            <span>
+                <span class="cp-name">Pictimer</span>
+                <span class="cp-desc">No original to copy from? When a whole batch lost its
+                    timestamps, Pictimer rebuilds a believable order from when you started and
+                    finished.</span>
+            </span>
+            <span class="cp-arrow">→</span>
         </a>
 
         <div class="links">
